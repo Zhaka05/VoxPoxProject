@@ -1,0 +1,19 @@
+<html lang="en">
+  <head>
+    <title>Messages</title>
+  </head>
+  <body>
+    <h3>VoxPox</h3>
+    <a href="/add/message">Write Message</a>
+    {% for comment in comments %}
+    <ul>
+        <li>
+            <div>
+                <p>Message Type: {{ comment.msg }}</p>
+                <p>{{comment.ctg}}</p>
+            </div>
+        </li>
+    </ul>
+    {% endfor %}
+  </body>
+</html>
